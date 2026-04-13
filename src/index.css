@@ -1,0 +1,72 @@
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+.validation-spinner {
+  animation: validation-spin 1s linear infinite;
+}
+
+@keyframes validation-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Figma-like CSS variables (kept minimal; grow as needed) */
+:root {
+  --primary-500: #266DF0;
+  --primary-600: #2363DA;
+  --primary-50: #E9F0FE;
+
+  --bg-surface-default: #FFFFFF;
+  --bg-surface-gray: #F8FAFC;
+
+  --stroke-neutral-soft: #DEE4EE;
+  --stroke-neutral-sub: #C5CFDD;
+  --stroke-state-primary: #266DF0;
+
+  --text-neutral-main: #111625;
+  --text-neutral-sub: #596881;
+  --text-neutral-soft: #8796AF;
+}

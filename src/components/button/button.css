@@ -1,0 +1,170 @@
+/* Base */
+.btn-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  line-height: 20px;
+}
+
+/* Centers SVG/icons with label (avoids inline SVG baseline offset) */
+.btn-icon-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.btn-icon-slot svg {
+  display: block;
+}
+
+/* Primary button with gradient from Figma */
+.btn-primary {
+  border: 1px solid var(--stroke-state-primary, #266DF0);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), var(--primary-500, #266DF0);
+  box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.12);
+  color: var(--bg-surface-default, #FFFFFF);
+}
+
+.btn-primary:disabled {
+  border-color: #C7D7FE;
+  background: #C7D7FE;
+  box-shadow: none;
+  color: #EEF2FF;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), var(--primary-600, #2363DA);
+  border-color: var(--primary-600, #2363DA);
+}
+
+/* Destructive primary button */
+.btn-primary-destructive {
+  border: 1px solid #D92D20;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #D92D20;
+  box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.12);
+  color: var(--bg-surface-default, #FFFFFF);
+}
+
+.btn-primary-destructive:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%), #B42318;
+  border-color: #B42318;
+}
+
+/* Secondary gray button */
+.btn-secondary-gray {
+  background: white;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #344054;
+}
+
+.btn-secondary-gray:hover:not(:disabled) {
+  background: #F9FAFB;
+}
+
+.btn-secondary-gray-destructive {
+  background: white;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #D92D20;
+}
+
+.btn-secondary-gray-destructive:hover:not(:disabled) {
+  background: #F9FAFB;
+}
+
+/* Secondary white button (outlined with primary color) */
+.btn-secondary-white {
+  background: var(--bg-surface-default, #FFFFFF);
+  border: 1px solid var(--stroke-neutral-sub, #C5CFDD);
+  box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.12);
+  color: var(--primary-500, #266DF0);
+}
+
+.btn-secondary-white:hover:not(:disabled) {
+  background: #F9FAFB;
+  border-color: var(--stroke-state-primary, #266DF0);
+}
+
+.btn-secondary-white-destructive {
+  background: #FFFFFF;
+  border: 1px solid #C5CFDD;
+  box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.12);
+  color: #D92D20;
+}
+
+.btn-secondary-white-destructive:hover:not(:disabled) {
+  background: #F9FAFB;
+  border-color: #D92D20;
+}
+
+/* Tertiary gray button */
+.btn-tertiary-gray {
+  background: transparent;
+  border: none;
+  color: #475467;
+}
+
+.btn-tertiary-gray:hover:not(:disabled) {
+  background: #F9FAFB;
+}
+
+.btn-tertiary-gray-destructive {
+  background: transparent;
+  border: none;
+  color: #D92D20;
+}
+
+.btn-tertiary-gray-destructive:hover:not(:disabled) {
+  background: #F9FAFB;
+}
+
+/* Link gray button */
+.btn-link-gray {
+  background: transparent;
+  border: none;
+  color: #475467;
+}
+
+.btn-link-gray:hover:not(:disabled) {
+  color: #344054;
+}
+
+.btn-link-gray-destructive {
+  background: transparent;
+  border: none;
+  color: #D92D20;
+}
+
+.btn-link-gray-destructive:hover:not(:disabled) {
+  color: #B42318;
+}
+
+/* Size variations */
+.btn-sm {
+  height: 32px;
+  padding: 8px;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.btn-md {
+  height: 40px;
+  padding: 8px 12px;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  height: 48px;
+  padding: 10px 16px;
+  gap: 8px;
+  font-size: 16px;
+}
